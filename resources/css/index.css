@@ -47,7 +47,7 @@ h1 {
   opacity: 0.7;
 }
 
-html {
+html, body {
   font-size: 18px;
   font-family: Helvetica;
   line-height: 1.4;
@@ -65,8 +65,8 @@ a {
 }
 
 .box {
-  height: 8rem;
-  width: 5rem;
+  max-height: 8rem;
+  max-width: 5rem;
   margin: 3rem;
   display: flex;
   flex-direction: column;
@@ -114,4 +114,85 @@ footer {
 footer img {
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+@media only screen and (min-width:1024px){
+  nav.mobile-nav {display:none;}}
+
+@media only screen and (max-width:1024px){
+  .wrapper {
+    width: 100%;
+  }
+  .banner {
+    padding-top: 0rem;
+  }
+  h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+  .main-heading {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  nav.desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:500px){
+.banner {
+  background-position: 20%;
+  height: 17rem;
+}
+h3 {
+  display:none;
+}
+.main-heading {
+  margin: 9rem 0rem 0rem 0rem;
+  display: block;
+}
+h1 {
+  font-size: 1rem;
+  text-align: center;
+  padding-top:1rem;
+  padding-bottom: 1rem;
+}
+.services {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3.77rem 0rem;
+}
+.box {
+  justify-content: flex-start;
+  margin: 0rem;
+}
+
+.fittings, .delivery {
+  padding-top: 1.54rem;
+}
+.info {
+  flex-direction: column;
+  align-items: center;
+}
+.blurb {
+  width: 100%;
+  margin-right: 0rem;
+}
+.philosophy {
+  margin-bottom: 4rem;
+}
+h2 {
+  width: 100%;
+  text-align: center;
+}
+body {
+  font-size: 0.77rem;
+}
+.copyright {
+  display: none;
+}
+footer {
+  justify-content: center;
+}
 }
